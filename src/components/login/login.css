@@ -1,0 +1,137 @@
+.login-container {
+  display: flex;
+  height: 100vh; /* ocupa toda la pantalla */
+}
+
+/* Mitad izquierda: imagen pegada */
+.login-left {
+  width: 40%;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  /* máscara más fuerte hacia la derecha */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+/* Mitad derecha: formulario */
+.login-right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.titulo-login{
+  font-size: 1.7rem !important;
+  font-weight: bold !important;
+}
+
+.placer-login{
+  font-size: 2.2rem !important;
+  font-weight: bold !important;
+  margin-bottom: 35px !important;
+}
+
+.login-form p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  max-width: 400px;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #5a5a5a;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::selection {
+  background: #155DFC; /* color de fondo de la selección */
+  color: #fff;         /* color del texto seleccionado */
+}
+
+.form-input:active {
+  background-color: #ffffff;
+  color: #5a5a5a;
+}
+
+.form-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; /* fuerza fondo blanco */
+  -webkit-text-fill-color: #5a5a5a;                 /* color del texto */
+  transition: background-color 5000s ease-in-out 0s; /* truco para evitar parpadeo */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #155DFC;
+  box-shadow: 0 0 4px #155DFC;
+}
+
+.form-button-login {
+  height: 3rem;
+  width: 170px;
+  margin-left: 22%;
+  background-color: #155DFC;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.25s, transform 0.2s;
+}
+
+.form-button-login:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.Yatienes-login{
+   padding-left: 19%;
+   color: white;
+}
+
+.login-form a {
+  display: inline-block; 
+  color: #155DFC;           
+  font-weight: 500;           
+  text-decoration: none;       
+  transition: color 0.2s ease;  
+}
+
+.login-form a:hover {
+  color: white;              
+}
+
+

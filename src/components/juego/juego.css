@@ -1,0 +1,61 @@
+.game-page {
+  padding: 40px;
+  background: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.game-header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.game-cover {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-tagline {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.game-rating {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.game-description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.game-trailer video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.game-gallery {
+  margin-top: 40px;
+}
+
+.screenshots {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.screenshots img {
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+}
